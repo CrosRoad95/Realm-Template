@@ -1,0 +1,1 @@
+﻿export const test = "test.js"

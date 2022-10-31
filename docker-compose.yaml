@@ -1,0 +1,20 @@
+version: "3.9"
+services:
+  server:
+    # build:
+    #   context: ../
+    #   dockerfile: ./Realm.Console/Dockerfile
+    image: "crosroad95/realm:latestConsole"
+    ports:
+      - "22003:22003/udp"
+      - "22005:22005"
+      - "22126:22126/udp"
+    volumes:
+      - ./Data/Server:/app/Server
+      - ./Data/Gui:/app/Gui
+      - ./Config/provisioning.yaml:/app/provisioning.yaml
+      - ./Config/appsettings.server.json:/app/appsettings.server.json
+      - presistance:/app/Persistance
+
+volumes:
+  presistance:
