@@ -1,0 +1,5 @@
+src/RealmRPG/bin/
+src/RealmRPG.ConsoleUtilities/obj/
+src/RealmRPG.ConsoleUtilities/bin/
+obj/
+.vs/

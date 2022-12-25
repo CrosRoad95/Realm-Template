@@ -1,0 +1,32 @@
+﻿blips:
+  sapdBlip:
+    icon: 30
+    position: [-50, -50, 0]
+pickups:
+  sapdStart:
+    model: 1314
+    position: [20, 5, 3]
+  help:
+    model: 1239
+    position: [348.7744, -87.57617, 1.3628025]
+fractions:
+  fractionSapd:
+    code: "SAPD"
+    name: "San andreas police department"
+    position: [10, 10, 10]
+    members:
+      admin:
+        permissions: [all]
+roles: ["admin"]
+accounts:
+  admin:
+    password: "asdASD123!@#"
+    claims:
+      webPanel: "*"
+      admin: true
+      discord.user.id: 254302438234783746
+    roles: [ "admin" ]
+upgrades:
+  fasterCar:
+    maxVelocity: [100, 2]
+    engineAcceleration: [100, 2]
